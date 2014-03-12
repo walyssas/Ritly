@@ -1,0 +1,9 @@
+<h1> Welcome to Ritly! </h1>
+
+<p> </p>
+<%= link_to "Shorten a link", new_rit_path %>
+
+<p> Links you've shortened: </p>
+<% @rits.each do |rit| %>
+	<p> <%= link_to "#{rit.link}", "#{rit.link}" %> - <%= link_to "localhost:3000/#{rit.hashcode}", "localhost:3000/#{rit.hashcode}" %>  </p>
+	<% end %>

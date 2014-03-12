@@ -1,0 +1,6 @@
+<%= link_to "Back to Home", root_path %> 
+
+<h1> Link info </h1>
+
+<p> <%= link_to "localhost:3000/#{@rit.hashcode}", "localhost:3000/#{@rit.hashcode}" %> goes to <%= link_to "#{@rit.link}", "#{@rit.link}" %></p> 
+<p> The hash code is <%= @rit.hashcode %> </p>

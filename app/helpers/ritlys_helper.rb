@@ -1,0 +1,2 @@
+module RitlysHelper
+end
